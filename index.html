@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--このhead要素でサイトのタイトルの設定、CSS・JSの読み込み、SNSでシェアした時にサムネイルを表示させたり、文字コードを指定できる-->
+    <title>ポートフォリオサイト</title>
+
+    <!--このUTF-8の文字コードの指定をすることで日本語の文字化けの問題を解決できる-->
+    <!--HTMLにおいて、スペース区切りで属性を与えることができる。この属性は要素に情報を追加している。属性名="属性値"という形で記述する-->
+    <meta charset="utf-8">
+    <meta name="description" content="これはポートフォリオサイトです">
+
+
+    <!-- https://getbootstrap.com/ からCDNをインストールする -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--このbody要素は、サイトの本文を書くことで、サイトにその内容を表示させることができる-->
+    <!--HTMLではタグの中にタグを書くという入れ子構造で記述していく。そのため、タグの中に書いたタグは字下げ(インデント)をする。字下げをするには、Tabキーを押す。
+        これで見やすいHTMLを書くことができる。
+    -->
+    <header>
+        <h1>ポートフォリオサイト</h1>
+    </header>
+
+    <main>
+        <h2>自己紹介</h2>
+
+        <div class="description_area">
+
+            <img src="img/my.jpg" alt="">
+
+            
+            <p class="description">はじめまして！エンジニアの田中太郎と申します。<br><br>得意分野はPythonでWEBとAIの案件を中心に受け持っています！<br>よろしくお願いいたします！！</p>
+
+        </div>
+
+
+        <hr>
+
+        <h2>スキル・資格</h2>
+
+        <!--divタグを使うことで要素をグループ化することができる。divタグとCSSも使うことで、段組みなどを表現できるようになる。-->
+
+        <div class="skill_area">
+            <div class="skill">
+                <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <ul>
+                    <li>ITパスポート試験</li>
+                    <li>基本情報技術者試験</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--TODO:ここで各スキルのレベルをグラフで表現する。
+            レーダーチャート
+            https://www.chartjs.org/docs/latest/samples/other-charts/radar.html
+        -->
+
+        <hr>
+
+        <h2>ご依頼から納品までの流れ</h2>
+
+        <ol>
+            <li>お問い合わせ・商談</li>
+            <li>契約</li>
+            <li>入金</li>
+            <li>開発</li>
+            <li>検品・納品</li>
+        </ol>
+
+        <hr>
+
+        <h2>対応可能なお仕事</h2>
+
+
+        <div class="work_area">
+
+            <div class="work">
+                <h3>ウェブサイト開発</h3>
+                <img src="img/site.jpg" alt="">
+
+                <p>Wordpressを使用したウェブサイトの開発を承ります。<br>サイトの制作から管理運用まで対応可能です。</p>
+            </div>
+            <div class="work">
+                <h3>ウェブアプリ開発</h3>
+                <img src="img/webapp.jpg" alt="">
+                <p>PythonのフレームワークDjangoを使用したウェブアプリの開発を承ります。<br>入力しやすいUI、見やすいグラフ等を採用しているため、業務効率の大幅な向上が期待できます。</p>
+            </div>
+            <div class="work">
+                <h3>AI開発</h3>
+                <img src="img/ai.jpg" alt="">
+                <p>Pythonを使用したAIの開発を承ります。<br>業務データを集約してAIに判断させることで、人件費の削減・生産性の向上が期待できます。</p>
+            </div>
+            <div class="work">
+                <h3>ネットワーク構築</h3>
+                <img src="img/network.jpg" alt="">
+
+                <p>社内ネットワークの構築作業を承ります。<br>セキュリティに配慮したネットワークにより、機密情報の漏えい等を防ぎます。</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h2>料金表</h2>
+
+        <!-- Bootstrapのテーブルを使う -->
+        <table class="table table-hover text-center">
+            <tr>
+                <th>開発内容</th>
+                <th>ライトコース</th>
+                <th>ミドルコース</th>
+                <th>ハイエンドコース</th>
+            </tr>
+            <tr>
+                <td>ウェブサイト開発</td>
+                <td>30,000円~50,000円</td>
+                <td>50,000円~100,000円</td>
+                <td>100,000円~300,000円</td>
+            </tr>
+            <tr>
+                <td>ウェブアプリ開発</td>
+                <td>50,000円~100,000円</td>
+                <td>100,000円~260,000円</td>
+                <td>260,000円~520,000円</td>
+            </tr>
+            <tr>
+                <td>AI開発</td>
+                <td>60,000円~100,000円</td>
+                <td>100,000円~200,000円</td>
+                <td>200,000円~500,000円</td>
+            </tr>
+            <tr>
+                <td>ネットワーク構築</td>
+                <td>100,000円~150,000円</td>
+                <td>150,000円~300,000円</td>
+                <td>300,000円~750,000円</td>
+            </tr>
+        </table>
+
+        
+        <h2>実績</h2>
+
+        <!--TODO:ここでChart.jsを使ったグラフを描画する。
+
+            棒グラフ
+
+            https://www.chartjs.org/docs/latest/samples/bar/vertical.html
+        -->
+
+
+        <h2>お問い合わせ</h2>
+
+        <a href="https://forms.gle/WTBnR8gG1rjXH8TL8">こちらからお問い合わせできます。</a>
+
+
+    </main>
+
+    <footer>
+        Copyright 〇〇. All rights reserved.
+    </footer>
+
+
+    <!--
+    【ポートフォリオサイトに掲載する物】
+    ・自己紹介文、スキル欄
+    ・作品集、どんな仕事をしているか、実績
+    ・これからどんな仕事をしたいか
+    ・お問い合わせ欄
+
+    【グラフ】
+    ・スキル欄もしくは実績の箇所にchart.jsを使用する
+    -->
+
+
+</body>
+</html>
+
+
+

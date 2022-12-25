@@ -1,0 +1,63 @@
+body {
+    margin:0;
+}
+
+img {
+    /* 画像要素は原寸で表示されるため、親要素をはみ出さないように 最大幅を100%とする。 */
+    max-width:100%;
+}
+
+h1 {
+    color:white;
+    background:deepskyblue;
+    padding:10px;
+
+    text-align:center;
+
+}
+h2 {
+    background:deepskyblue;
+
+    /* paddingを2つ指定することで、上下に5px、左右に10px割り当てられる */
+    padding:5px 10px;
+}
+
+
+/* クラス名を指定して装飾することもできる。pタグやaタグ、divタグなど様々な場所で使うタグは、タグに対して装飾するよりもクラス名で装飾する方が良い */
+.description_area {
+    text-align:center;
+}
+.description {
+    font-size:18px;
+
+}
+
+
+
+.skill_area {
+    display:flex;
+}
+.skill {
+    width:50%;
+}
+
+
+.work_area {
+    display:flex;
+    flex-wrap:wrap;
+}
+.work {
+    width:50%;
+    text-align:center;
+}
+
+
+
+
+footer {
+    margin-top:20px;
+    background:gray;
+    padding:30px;
+    text-align:center;
+    font-size:20px;
+}
